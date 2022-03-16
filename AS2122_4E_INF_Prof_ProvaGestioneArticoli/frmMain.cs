@@ -71,7 +71,6 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             lblUnitaMisura.Text = articoli[index].UnitaMisura;
             lblPrezzo.Text = articoli[index].Prezzo.toString();
 
-
         }
 
         private void frmMain_Load(object sender, EventArgs e)

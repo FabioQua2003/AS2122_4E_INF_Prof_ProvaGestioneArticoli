@@ -18,6 +18,20 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (9) aggiungere property di sola lettura dei dati necessari all'esterno di Articolo
         // ...
+        public String Descrizione
+        {
+            get { return descrizione; }
+        }
+        public String UnitaDiMisura
+        {
+            get { return unitaDiMisura; }
+        }
+        public double Prezzo
+        {
+            get { return prezzo; }
+        }
+
+
         public Articolo(int codice, string descrizione, string unitaMisura, double prezzo)
         {
             // TODO: (10) impostazione costruttore classe Articolo come utilizzato da frmMain
@@ -29,7 +43,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         public string Visualizzati()
         {
-            return $"{descrizione} {unitaMisura} {prezzo} ({codice})";
+            return $"{descrizione} {unitaDiMisura} {prezzo} ({codice})";
         }
     }
 }
