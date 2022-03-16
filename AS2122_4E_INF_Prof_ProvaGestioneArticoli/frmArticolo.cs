@@ -38,8 +38,6 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         }
 
 
-
-
         public frmArticolo()
         {
             InitializeComponent();
