@@ -16,6 +16,9 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (5) aggiungere attributi privati dei dati inseriti nella frmArticoli
         // ...
+        string descrizione;
+        string unitaMisura;
+        double prezzo;
 
         public DialogResult Status { get { return status; } }
 
@@ -30,6 +33,10 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         {
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
+
+            this.descrizione = txtDescrizione.Text;
+            this.unitaMisura = cmbUnitaMisura.Text;
+            this.descrizione = txtPrezzo.Text;
 
             status = DialogResult.OK;
             Close();
