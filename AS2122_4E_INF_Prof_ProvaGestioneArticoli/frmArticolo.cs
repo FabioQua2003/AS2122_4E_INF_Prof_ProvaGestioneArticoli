@@ -40,5 +40,10 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             status = DialogResult.Cancel;
             Close();
         }
+
+        private void frmArticolo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
