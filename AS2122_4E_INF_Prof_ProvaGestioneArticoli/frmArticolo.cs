@@ -24,6 +24,22 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (6) aggiungere property di sola lettura dei dati inseriti nella frmArticoli per l'utilizzo in frmMain
         // ...
+        public String Descrizione
+        {
+            get {return descrizione; }
+        }
+        public String UnitaDiMisura
+        {
+            get { return unitaMisura; }
+        }
+        public double Prezzo
+        {
+            get { return prezzo; }
+        }
+
+
+
+
         public frmArticolo()
         {
             InitializeComponent();
@@ -36,7 +52,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             this.descrizione = txtDescrizione.Text;
             this.unitaMisura = cmbUnitaMisura.Text;
-            this.descrizione = txtPrezzo.Text;
+            this.prezzo = Convert.ToDouble(txtPrezzo.Text);
 
             status = DialogResult.OK;
             Close();
