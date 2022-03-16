@@ -51,7 +51,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
                     foreach(Articolo a in articoli)
                     {
-                        string curItem= lstElenco.Items.Add(a.Visualizzati());
+                        lstElenco.Items.Add(a.Visualizzati());
                     }
                     break;
             }
@@ -66,6 +66,11 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
+            lblDescrizione.Text = articoli[index].Descrizione;
+            lblUnitaMisura.Text = articoli[index].UnitaMisura;
+            lblPrezzo.Text = articoli[index].Prezzo.toString();
+
+
         }
 
         private void frmMain_Load(object sender, EventArgs e)
